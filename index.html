@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConceptX</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navbar-gp {
+            position: sticky;
+            top: 0;
+            right: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding: 6px;
+        }
+
+        .navbar {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            background-color: rgb(128, 148, 214);
+            border-radius: 30px;
+
+        }
+
+        .ConceptX_logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 9px;
+            margin-right: auto;
+        }
+
+        .ConceptX {
+            margin-right: auto;
+            text-decoration: none;
+        }
+
+
+        .home,
+        .about_us,
+        .payment,
+        .libary {
+            font-family: 'JetBrains Mono', monospace;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 40px;
+            font-size: larger;
+        }
+
+
+        .background {
+            width: 100%;
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url("/images/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-text {
+            padding: 8vw;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .hero-text h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(35px, 6vw, 70px);
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin: 0;
+            padding-top: 100px;
+        }
+
+        /* Gradient text */
+        .gradient {
+            background: linear-gradient(90deg, #4f46e5, #ec4899, #f59e0b);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            color: wheat;
+            padding-left: 100px;
+            padding-top: 250px;
+            font-size: 20px;
+        }
+
+        .welcome_to_ConceptX {
+            font-family: 'JetBrains Mono', monospace;
+            color: rgb(0, 42, 231);
+            margin: 20px;
+        }
+
+        .videos {
+            padding-top: 10px;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .video {
+            width: 600px;
+        }
+
+        .address {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(18, 27, 51);
+        }
+
+        .address_logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 9px;
+            margin-left: 20px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .add_conceptX {
+            font-family: 'JetBrains Mono', monospace;
+            color: rgb(255, 255, 255);
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .location {
+            flex-grow: 1;
+            flex-basis: 200;
+        }
+
+        .location-btn {
+            display: inline-block;
+            padding: 10px 10px;
+            border: 2px solid #fdfdff;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            transition: 0.3s;
+            margin-left: 80px;
+        }
+
+        .location-btn:hover {
+            background-color: #284bacee;
+            color: rgb(255, 255, 255);
+        }
+
+        .address {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .loc1 {
+            padding-left: 20px;
+        }
+
+        .loc1 a {
+            color: wheat;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .loc2 {
+            padding-left: 30px;
+        }
+
+        .loc2 a {
+            color: wheat;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .contact {
+            display: inline-block;
+            margin-left: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar-gp">
+        <div class="navbar">
+
+            <a href="1Main_page.html" class="ConceptX">
+                <img src="/images/conceptX_whitelogo.jpg" alt="ConceptX Logo" class="ConceptX_logo">
+            </a>
+            <a href="2Home_page.html" class="home">
+                <b>Home</b>
+            </a>
+            <a href="3AboutUs_page.html" class="about_us">
+                <b>About Us</b>
+            </a>
+
+            <a href="6Libary_page.html" class="libary">
+                <b>Libary</b>
+            </a>
+
+            <a href="4Payment_page.html" class="payment">
+                <b>Payment</b>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="background">
+        <div class="hero-text">
+            <h1>
+                <span class="gradient">Educating</span> the <br>
+                people of Myanmar
+            </h1>
+            <p class="welcoome-p"> Welcome to our school,
+                where we foster creativity,
+                critical thinking, and lifelong
+                learning.
+            </p>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="welcome_to_ConceptX">-Welcome to ConceptX</h3><br><br>
+    </div>
+
+    <div class="videos">
+        <video src="/videos/video.mp4" class="video" controls autoplay muted loop> </video>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="address">
+        <img src="/images/conceptX_whitelogo.jpg" alt="address_logo" class="address_logo">
+        <h2 class="add_conceptX">ConceptX</h2>
+
+        <div class="address">
+            <div class="loc1">
+                <a href="https://maps.app.goo.gl/7sWQCNXYBsA5iUFa7">
+                    <p>1A/1, Pawsan Hmwe Road, <br>
+                        Thuwana, Thingangyun Township, <br>
+                        Yangon</p>
+                </a>
+            </div>
+
+            <div class="loc2">
+                <a href="https://maps.app.goo.gl/9bmqsxbUmEcjGWWs7">
+                    <p>103, 30th Street lower block <br>
+                        (between Merchant & Mahabandula Road), <br>
+                        Kyauktada Yangon</p>
+                </a>
+            </div>
+
+            <div class="contact">
+                <div>📞 +959 775 111 113</div>
+                <div>✉️ info@conceptxmm.com</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
