@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConceptX |Register</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <style>
+        .login {
+            margin-left: 30%;
+            padding: 60px;
+            background: rgba(99, 96, 96, 0.25);
+            backdrop-filter: blur(15px);
+            border: 1px solid #fff;
+            border-bottom: 1px solid rgba(119, 116, 116, 0.705);
+            border-right: 1px solid rgba(122, 112, 112, 0.5);
+            border-radius: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .login h3 {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 600;
+            color: #0011ff;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .login h4 {
+            position: relative;
+            text-align: center;
+            font-weight: 600;
+            color: #0011ff;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .login .inputBox {
+            position: relative;
+        }
+
+        .login .inputBox input {
+            position: relative;
+            width: 100%;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 1.2em;
+            color: #474eb1;
+            border-radius: 5px;
+            background: #fff;
+            border: none;
+        }
+
+        .login .inputBox ::placeholder {
+            color: #4e5070;
+        }
+
+        .login select {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background: #fff;
+            color: #4e5070;
+            margin-top: 5px;
+        }
+
+
+        .login .radio-group {
+            display: flex;
+            gap: 20px;
+            font-size: 1.1em;
+            color: #000000;
+        }
+
+
+        .login input[type="file"] {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #0a0a0a;
+        }
+
+
+        .login .check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1em;
+            color: #000000;
+        }
+
+        .login .group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login .group a {
+            font-size: 1.25em;
+            color: #8f2c24;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .login .group a:nth-child(2) {
+            text-decoration: underline;
+        }
+
+        .login .Confirm {
+            position: relative;
+        }
+
+        .login .Confirm input {
+            position: relative;
+            width: 100%;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 1.2em;
+            color: #ffffff;
+            border-radius: 5px;
+            background: #0213fa;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h3>Register</h3>
+        <h4>* This is just a simulator do not pay money in this *</h4>
+        <div class="inputBox">
+            <input type="text" placeholder="First name" </div>
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Last name" </div>
+        </div>
+        <div class="inputBox">
+            <input type="email" placeholder="mail@name67.com" </div>
+        </div>
+        <div class="inputBox">
+            <input type="password" placeholder="password" </div>
+        </div>
+
+        <div>
+            <p>Choose class</p>
+            <select>
+                <option>Primary</option>
+                <option>Secondary</option>
+                <option>IGCSE</option>
+            </select>
+        </div>
+
+        <div class="radio-group">
+            <label><input type="radio" name="payment"> KBZ pay</label>
+            <label><input type="radio" name="payment"> Wave pay</label>
+            <label><input type="radio" name="payment"> AYA pay</label>
+        </div>
+
+        <div>
+            <p>Upload your remittance receipt --
+                <input type="file">
+            </p>
+        </div>
+
+        <div class="check">
+            <input type="checkbox">
+            <span>I agree with school policies, rules and it's consequences</span>
+        </div>
+
+        <div class="Confirm">
+            <a href="thankyou.html"><input type="submit" value="Confirm" id="btn"></a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

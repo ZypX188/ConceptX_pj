@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConceptX |About Us</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<style>
+    body {
+        padding: 15px;
+        font-family: Arial;
+    }
+
+    .container {
+        width: 200px;
+        height: 500px;
+        background-color: rgb(128, 148, 214);
+        border-radius: 8px;
+        position: fixed;
+        top: 1;
+        left: 1;
+    }
+
+    .title-gp {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title {
+        padding-top: 2px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .title-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+
+    }
+
+    .home {
+        padding: 5px;
+    }
+
+    .home-btn {
+        padding: 10px 74px;
+        text-decoration: none;
+        color: #000000;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transition: 0.3s;
+        background-color: rgb(229, 232, 235);
+    }
+
+    .home-btn:hover {
+        background-color: #ffffff6b;
+        color: rgb(0, 17, 255);
+    }
+
+    .aboutus {
+        padding: 5px;
+    }
+
+    .aboutus-btn {
+        padding: 10px 62px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transition: 0.3s;
+        background-color: rgba(44, 44, 44, 0.849);
+    }
+
+    .aboutus-btn:hover {
+        background-color: #ffffff6b;
+        color: rgb(0, 17, 255);
+    }
+
+    .library {
+        padding: 5px;
+    }
+
+    .library-btn {
+        padding: 10px 72px;
+        text-decoration: none;
+        color: #000000;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transition: 0.3s;
+        background-color: rgb(229, 232, 235);
+    }
+
+    .library-btn:hover {
+        background-color: #ffffff6b;
+        color: rgb(0, 17, 255);
+    }
+
+    .payment {
+        padding: 5px;
+    }
+
+    .payment-btn {
+        padding: 10px 65px;
+        text-decoration: none;
+        color: #000000;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transition: 0.3s;
+        background-color: rgb(229, 232, 235);
+    }
+
+    .payment-btn:hover {
+        background-color: #ffffff6b;
+        color: rgb(0, 17, 255);
+    }
+
+    .adress {
+        padding-top: 1px;
+    }
+
+    .box {
+        padding-left: 250px;
+    }
+
+    .subject-group {
+        padding-left: 250px;
+    }
+
+
+    .box {
+        width: auto;
+        margin: 50px auto;
+        font-family: sans-serif;
+    }
+
+    .grades-box-title {
+        display: block;
+        padding: 15px;
+        background: #4f46e5;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-arrow {
+        width: 23px;
+        height: 23px;
+        border-right: 4px solid rgb(255, 255, 255);
+        border-bottom: 4px solid rgb(255, 255, 255);
+        transform: rotate(45deg);
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+
+    #toggle {
+        display: none;
+    }
+
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        background: #a8adb380;
+        transition: 0.4s ease;
+        padding: 0 15px;
+        border-radius: 0 0 9px 8px;
+    }
+
+
+    #toggle:checked+.grades-box-title+.content {
+        max-height: 600px;
+        padding: 10px;
+    }
+
+    .primary {
+        background-color: rgb(43, 107, 247);
+        color: rgb(253, 254, 255);
+    }
+
+    .secondary {
+        background-color: rgb(201, 37, 37);
+        color: aliceblue;
+    }
+
+
+    .subject-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .subject-box {
+        width: 200px;
+        margin: 2px;
+        font-family: sans-serif;
+        flex-grow: 1;
+        flex-basis: 200;
+    }
+
+    .P1-P4 {
+        display: block;
+        padding: 15px;
+        background: #0fa0a5;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    #toggle2 {
+        display: none;
+    }
+
+    .p1-4_subject {
+        max-height: 0;
+        overflow: hidden;
+        background: #001aff75;
+        transition: 0.4s ease;
+        padding: 0 15px;
+        border-radius: 0 0 9px 8px;
+    }
+
+
+    #toggle2:checked+.P1-P4+.p1-4_subject {
+        max-height: 600px;
+        padding: 10px;
+    }
+
+    .subject-box2 {
+        width: 200px;
+        margin: 2px;
+        font-family: sans-serif;
+        flex-grow: 1;
+        flex-basis: 200;
+    }
+
+    .P5-P6 {
+        display: block;
+        padding: 15px;
+        background: #0fa0a5;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    #toggle3 {
+        display: none;
+    }
+
+    .p5-6_subject {
+        max-height: 0;
+        overflow: hidden;
+        background: #001aff75;
+        transition: 0.4s ease;
+        padding: 0 15px;
+        border-radius: 0 0 9px 8px;
+    }
+
+
+    #toggle3:checked+.P5-P6+.p5-6_subject {
+        max-height: 600px;
+        padding: 10px;
+    }
+
+
+    .subject-box3 {
+        width: 200px;
+        margin: 2px;
+        font-family: sans-serif;
+        flex-grow: 1;
+        flex-basis: 200;
+    }
+
+    .S1-S2 {
+        display: block;
+        padding: 15px;
+        background: #0fa0a5;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    #toggle4 {
+        display: none;
+    }
+
+    .S1-S2_subject {
+        max-height: 0;
+        overflow: hidden;
+        background: #001aff75;
+        transition: 0.4s ease;
+        padding: 0 15px;
+        border-radius: 0 0 9px 8px;
+    }
+
+
+    #toggle4:checked+.S1-S2+.S1-S2_subject {
+        max-height: 600px;
+        padding: 10px;
+    }
+
+    .subject-box4 {
+        width: 200px;
+        margin: 2px;
+        font-family: sans-serif;
+        flex-grow: 1;
+        flex-basis: 200;
+    }
+
+    .IGCSE {
+        display: block;
+        padding: 15px;
+        background: #0fa0a5;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    #toggle5 {
+        display: none;
+    }
+
+    .IGCSE_subject {
+        max-height: 0;
+        overflow: hidden;
+        background: #001aff75;
+        transition: 0.4s ease;
+        padding: 0 15px;
+        border-radius: 0 0 9px 8px;
+    }
+
+
+    #toggle5:checked+.IGCSE+.IGCSE_subject {
+        max-height: 600px;
+        padding: 10px;
+    }
+
+    .Uniform-table-gp {
+        padding-left: 250px;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .uniform-photo1 {
+        padding-left: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .p_uniform1 {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .p_uniform2 {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .uniform-photo2 {
+        padding-left: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .s_uniform1 {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .s_uniform2 {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .Summer-class {
+        padding-left: 300px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="title-gp">
+            <a href="index.html" class="title">
+                <h2>ConceptX</h2>
+            </a>
+
+            <a href="index.html">
+                <img src="/images/apple-touch-icon.png" class="title-logo">
+            </a>
+        </div>
+        <hr>
+
+        <div class="main">
+            <div class="home">
+                <a href="2Home_page.html" class="home-btn">
+                    <b>Home</b>
+                </a>
+            </div><br>
+
+            <div class="aboutus">
+                <a href="3AboutUs_page.html" class="aboutus-btn">
+                    <b>About Us</b>
+                </a>
+            </div><br>
+
+            <div class="library">
+                <a href="6Libary_page.html" class="library-btn">
+                    <b>library</b>
+                </a>
+            </div><br>
+
+            <div class="payment">
+                <a href="4Payment_page.html" class="payment-btn">
+                    <b>Payment</b>
+                </a>
+            </div>
+        </div><br>
+
+        <br><br><br><br><br><br><br><br>
+        <hr>
+
+        <div class="adress">
+            <h4>
+                <pre>
+    📞 +959 775 111 113
+    ✉️ info@conceptxmm.com
+                </pre>
+            </h4>
+        </div>
+    </div>
+
+    <div class="box">
+        <input type="checkbox" id="toggle">
+
+        <label for="toggle" class="grades-box-title">
+            <h1>Grades</h1>
+
+            <div class="title-arrow">
+            </div>
+        </label>
+
+        <div class="content">
+            <table border="1" cellspacing="0" cellpadding="17px">
+                <tr>
+                    <th colspan="2" class="primary">Primary Level</th>
+                    <th colspan="2" class="secondary"> Secondary Level</th>
+                </tr>
+                <tr>
+                    <th>Grades</th>
+                    <th>Level</th>
+                    <th>Grades</th>
+                    <th>Level</th>
+                </tr>
+
+                <tr>
+                    <td>Primary 1 (P1)</td>
+                    <td>Elementary school</td>
+                    <td>Secondary 1 <br>(lower secondary)</td>
+                    <td>Middle School</td>
+                </tr>
+                <tr>
+                    <td>Primary 2 (P2)</td>
+                    <td>Elementary school</td>
+                    <td>Secondary 2 <br>(lower secondary)</td>
+                    <td>Middle School</td>
+                </tr>
+                <tr>
+                    <td>Primary 3 (P3)</td>
+                    <td>Elementary school</td>
+                    <td>Secondary 3 <br>(upper secondary)</td>
+                    <td>High School <br>(IGCSE)</td>
+                </tr>
+                <tr>
+                    <td>Primary 4 (P4)</td>
+                    <td>Elementary school</td>
+                    <td>Secondary 4 <br>(upper secondary)</td>
+                    <td>High School <br>(IGCSE)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Primary 5 (P5)</td>
+                    <td>Middle School</td>
+                    <td colspan="4" rowspan="4"> &copy; All information are from the ConceptX official website</td>
+
+                </tr>
+                <tr>
+                    <td>Primary 6 (P6)</td>
+                    <td>Middle School</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="subject-group">
+        <div class="subject-box">
+            <input type="checkbox" id="toggle2">
+
+            <label for="toggle2" class="P1-P4">
+                <h1>Primary</h1>
+                <p><b>Subjects:</b> P1-P4</p>
+            </label>
+
+            <div class="p1-4_subject">
+                <ul>
+                    <li>P1-P4
+                        <ul>
+                            <li>English</li>
+                            <li>Math</li>
+                            <li>Science</li>
+                            <li>Myanmar</li>
+                            <li>Computing</li>
+                            <li> Geography</li>
+                            <li>History</li>
+                            <li>Art</li>
+                            <li>Music</li>
+                            <li>PE</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subject-box2">
+            <input type="checkbox" id="toggle3">
+
+            <label for="toggle3" class="P5-P6">
+                <h1>Primary</h1>
+                <p><b>Subjects:</b> P5-P6</p>
+            </label>
+
+            <div class="p5-6_subject">
+                <ul>
+                    <li>P5-P6
+                        <ul>
+                            <li>English</li>
+                            <li>Math</li>
+                            <li>Computing</li>
+                            <li>Biology</li>
+                            <li>Chemistry</li>
+                            <li>Physics</li>
+                            <li>Engineering</li>
+                            <li> Geography</li>
+                            <li>Humanities</li>
+                            <li>Art</li>
+                            <li>Music</li>
+                            <li>PE</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subject-box3">
+            <input type="checkbox" id="toggle4">
+
+            <label for="toggle4" class="S1-S2">
+                <h1>Secondary</h1>
+                <p><b>Subjects:</b> S1-S2</p>
+            </label>
+
+            <div class="S1-S2_subject">
+                <ul>
+                    <li>S1-S2</li>
+                    <ul>
+                        <li>English</li>
+                        <li>Math</li>
+                        <li>Computing</li>
+                        <li>Biology</li>
+                        <li>Chemistry</li>
+                        <li>Physics</li>
+                        <li>Engineering</li>
+                        <li> Geography</li>
+                        <li>Humanities</li>
+                        <li>Art</li>
+                        <li>Music</li>
+                        <li>PE</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subject-box4">
+            <input type="checkbox" id="toggle5">
+
+            <label for="toggle5" class="IGCSE">
+                <h1>IGCSE</h1>
+                <p><b>Subjects:</b>IGCSE (S3-S4)</p>
+            </label>
+
+            <div class="IGCSE_subject">
+                <ul>
+                    <li>IGCSE</li>
+                    <ul>
+                        <li>English</li>
+                        <li>Mathematics</li>
+                        <li>Computing</li>
+                        <li>Biology</li>
+                        <li>Chemistry</li>
+                        <li>Physics</li>
+                        <li>Art</li>
+                        <li>Physical Education</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div><br><br><br>
+    <hr>
+
+    <div class="Summer-class">
+        <h1> Summer Classes </h1>
+        <p>Click image to see details</p>
+
+        <a href="Lethwei.html">
+            <img src="/summer class photo/Lethwei.png" alt="Lethwe"
+                style="width: 25%; border-radius: 20px; margin-right: 20px;" title="Click">
+        </a>
+        <a href="Volleyball.html">
+            <img src="/summer class photo/volleyball.png" alt="Volleyball" style="width: 25%; border-radius: 20px;"
+                title="Click">
+        </a>
+
+        <br><br> <a href="Basketball.html">
+            <img src="/summer class photo/basketball.png" alt="Basketball"
+                style="width: 25%; border-radius: 20px; margin-right: 20px;" title="Click">
+        </a>
+        <a href="Taekwondo.html">
+            <img src="/summer class photo/taekwondo.png" alt="Taekwondo" style="width: 25%; border-radius: 20px;"
+                title="Click">
+        </a>
+    </div>
+    <hr>
+
+    <div class="Uniform-table-gp">
+        <div class="uniform-table">
+            <h2>Uniform</h2>
+            <table border="1" cellspacing="0" cellpadding="17px">
+                <tr style="
+                color: rgb(0, 0, 0);
+                ">
+                    <th><b>Grades</b></th>
+                    <th><b>Shirt color</b></th>
+                    <th><b>Pants/Skirts</b></th>
+                </tr>
+
+                <tr style="background-color: rgba(76, 133, 240, 0.850);
+                color: rgb(255, 255, 255);">
+                    <td><b>Primary</b></td>
+                    <td><b>White</b></td>
+                    <td><b>Blue</b></td>
+                </tr>
+
+                <tr style="background-color: rgb(224, 64, 64, 0.850);
+                color: rgb(255, 255, 255);">
+                    <td><b>Secondary</b></td>
+                    <td><b>Red/White</b></td>
+                    <td><b>Karke</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="uniform-photo-group">
+        <div class="uniform-photo1">
+            <div>
+                <img src="/uniform/p_uniform1.png" class="p_uniform1">
+            </div>
+
+            <div>
+                <img src="/uniform/p_uniform2.png" class="p_uniform2">
+            </div>
+        </div>
+
+        <div class="uniform-photo2">
+            <div>
+                <img src="/uniform/s_uniform1.png" class="s_uniform1">
+            </div>
+            <div>
+                <img src="/uniform/s_uniform2.png" class="s_uniform2">
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+    <br><br><br>
+    <hr>
+
+
+
+
+
+</body>
+
+</html>
